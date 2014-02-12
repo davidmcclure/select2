@@ -461,6 +461,7 @@ the specific language governing permissions and limitations under the Apache Lic
                     }
                 });
                 handler = transport.call(self, params);
+                query.element.trigger($.Event("select2-loading"));
             }, quietMillis);
         };
     }
